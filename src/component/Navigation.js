@@ -14,7 +14,7 @@ function Navigation({ sections, onSectionChange }) {
         </button>
       ))}
       <button onClick={() => navigate('/react-overview')}>
-        React Overview
+        React
       </button>
     </nav>
   );

@@ -10,7 +10,7 @@ function App() {
     Python: [],
     Java: [],
     TypeScript: [],
-    React: [],
+   
   });
   const [currentSection, setCurrentSection] = useState('Python');
 
