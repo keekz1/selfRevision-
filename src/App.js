@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Router, Routes, and Route
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'; // Import useNavigate
 import Section from './component/Section';
 import NoteEditor from './component/NoteEditor';
 import Navigation from './component/Navigation';
@@ -40,6 +40,9 @@ function App() {
             sections={Object.keys(sections)}
             onSectionChange={setCurrentSection}
           />
+          <button onClick={() => navigate('/react-overview')}>
+            Go to React Overview
+          </button>
           <Routes>
             <Route path="/react-overview" element={<ReactOverview />} />
             <Route
