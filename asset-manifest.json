@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my-coding-notes/static/css/main.435d5fe5.chunk.css",
-    "main.js": "/my-coding-notes/static/js/main.0f4c6df9.chunk.js",
-    "main.js.map": "/my-coding-notes/static/js/main.0f4c6df9.chunk.js.map",
-    "runtime~main.js": "/my-coding-notes/static/js/runtime~main.a7707fca.js",
-    "runtime~main.js.map": "/my-coding-notes/static/js/runtime~main.a7707fca.js.map",
-    "static/js/2.f2fdd848.chunk.js": "/my-coding-notes/static/js/2.f2fdd848.chunk.js",
-    "static/js/2.f2fdd848.chunk.js.map": "/my-coding-notes/static/js/2.f2fdd848.chunk.js.map",
-    "static/js/3.fafc789c.chunk.js": "/my-coding-notes/static/js/3.fafc789c.chunk.js",
-    "static/js/3.fafc789c.chunk.js.map": "/my-coding-notes/static/js/3.fafc789c.chunk.js.map",
-    "index.html": "/my-coding-notes/index.html",
-    "precache-manifest.69ac14469328d414d167164dd16aa045.js": "/my-coding-notes/precache-manifest.69ac14469328d414d167164dd16aa045.js",
-    "service-worker.js": "/my-coding-notes/service-worker.js",
-    "static/css/main.435d5fe5.chunk.css.map": "/my-coding-notes/static/css/main.435d5fe5.chunk.css.map"
+    "main.css": "/selfRevision-/static/css/main.435d5fe5.chunk.css",
+    "main.js": "/selfRevision-/static/js/main.0f4c6df9.chunk.js",
+    "main.js.map": "/selfRevision-/static/js/main.0f4c6df9.chunk.js.map",
+    "runtime~main.js": "/selfRevision-/static/js/runtime~main.60061c38.js",
+    "runtime~main.js.map": "/selfRevision-/static/js/runtime~main.60061c38.js.map",
+    "static/js/2.f2fdd848.chunk.js": "/selfRevision-/static/js/2.f2fdd848.chunk.js",
+    "static/js/2.f2fdd848.chunk.js.map": "/selfRevision-/static/js/2.f2fdd848.chunk.js.map",
+    "static/js/3.fafc789c.chunk.js": "/selfRevision-/static/js/3.fafc789c.chunk.js",
+    "static/js/3.fafc789c.chunk.js.map": "/selfRevision-/static/js/3.fafc789c.chunk.js.map",
+    "index.html": "/selfRevision-/index.html",
+    "precache-manifest.d675d89eb94d15f4d8a60bed2dfce3df.js": "/selfRevision-/precache-manifest.d675d89eb94d15f4d8a60bed2dfce3df.js",
+    "service-worker.js": "/selfRevision-/service-worker.js",
+    "static/css/main.435d5fe5.chunk.css.map": "/selfRevision-/static/css/main.435d5fe5.chunk.css.map"
   }
 }
