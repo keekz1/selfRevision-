@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Section from './component/Section';
 import NoteEditor from './component/NoteEditor';
 import Navigation from './component/Navigation';
@@ -10,6 +10,7 @@ function App() {
     Python: [],
     Java: [],
     TypeScript: [],
+    React: [],
   });
   const [currentSection, setCurrentSection] = useState('Python');
 

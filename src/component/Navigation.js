@@ -8,12 +8,13 @@ function Navigation({ sections, onSectionChange }) {
   return (
     <nav>
       {sections.map((section) => (
+        // Render section buttons
         <button key={section} onClick={() => onSectionChange(section)}>
           {section}
         </button>
       ))}
       <button onClick={() => navigate('/react-overview')}>
-        React
+        React Overview
       </button>
     </nav>
   );
