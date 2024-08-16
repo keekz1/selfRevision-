@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext, createContext } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 // Context for the example
 const MyContext = createContext();

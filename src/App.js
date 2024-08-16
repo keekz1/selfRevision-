@@ -1,11 +1,9 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Section from './components/Section';
-import NoteEditor from './components/NoteEditor';
-import Navigation from './components/Navigation';
-import ReactOverview from './components/ReactOverview';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Router, Routes, and Route
+import Section from './component/Section';
+import NoteEditor from './component/NoteEditor';
+import Navigation from './component/Navigation';
+import ReactOverview from './component/ReactOverview';
 
 function App() {
   const [sections, setSections] = useState({
