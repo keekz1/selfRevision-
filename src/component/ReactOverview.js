@@ -266,9 +266,9 @@ const handleClick = (event : MouseEvent)=> console.log(event)
 return ><>
 
     <h1>{heading}</h1>
-     {props.items.length===0? && <p>no items found</p>}
+     {items.length===0? && <p>no items found</p>}
     <ul className="List-Group">
-  {props.items.map((item,index)=>(
+  {items.map((item,index)=>(
     <li className={selectedIndex===index ? "list-group-item active" : "list-group-item} key={item} onClick={()=>{setSelectedIndex(index);}}// in order to show th eitem clicked in the console we logged item to it 
 
    </ul>
@@ -288,6 +288,43 @@ return(
   
   }
 }
+  // passing functions via props
+  
+import { useState } from "react"
+import { MouseEvent } from "react";
+
+
+interface Props {
+   items: string[];
+   heading: string;
+   // (item: string) => void
+   onselectItem: (item:string) = >void // onClick
+
+
+}
+
+function ListGroup ({items,heading}:Props{
+
+//Hook 
+const [selctedIndex , setSelectedIndex]=useState(-1);
+
+
+//event Handler
+const handleClick = (event : MouseEvent)=> console.log(event)
+
+return ><>
+
+    <h1>{heading}</h1>
+     {items.length===0? && <p>no items found</p>}
+    <ul className="List-Group">
+  {items.map((item,index)=>(
+    <li className={selectedIndex===index ? "list-group-item active" : "list-group-item} key={item} 
+    onClick={()=>{setSelectedIndex(index); onSelectItem(item)}}// in order to show th eitem clicked in the console we logged item to it 
+
+   </ul>
+  </div>
+  <>
+
 `}</code></pre>
     <div className="section">
       <h2>5. State</h2>
