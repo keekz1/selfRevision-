@@ -74,7 +74,7 @@ Using fragments helps keep the HTML structure clean and reduces unnecessary nest
     <code>{` jsx (javascript xml)
   function ListGroup {
   return ><>
-  <div>
+  
    <ul className="List-Group">
     <li classNmae=List-Group-item> item</li>
     <li classNmae=List-Group-item> third item</li>
@@ -83,7 +83,6 @@ Using fragments helps keep the HTML structure clean and reduces unnecessary nest
 
 
   </ul>
-  </div>
 
   <>
 }
@@ -103,12 +102,10 @@ let
   const items=["london","tokyo","paris","spain"]
   
   return ><>
-  <div>
    <ul className="List-Group">
   {items.map((item)=>(
     <li key ={item}>{item}</li>))} //when rendering a list of items  using the map method we shoul dgive each item a unique key
   </ul>
-  </div>
 
   <>
 }
@@ -125,12 +122,11 @@ items[];
 if(items.length===0)
 return <><h1>List</h1><p>no items found<p><>;
 return ><>
-  <div>
    <ul className="List-Group">
   {items.map((item)=>(
     <li key ={item}>{item}</li>))} //when rendering a list of items  using the map method we shoul dgive each item a unique key
   </ul>
-  </div>
+  
 
   <>
 }
@@ -146,13 +142,11 @@ let items=["london","tokyo","paris","spain"];
 items[];
 
 return ><>
-  <div>
    <ul className="List-Group">
    {items.length===0?<p>no items found</p>:null}
   {items.map((item)=>(
     <li key ={item}>{item}</li>))} //when rendering a list of items  using the map method we shoul dgive each item a unique key
   </ul>
-  </div>
 
   <>
 }
@@ -170,13 +164,11 @@ const getMessage= ()=> { return items.length===0?<p>no items found</p>:null
 
 
 return ><>
-  <div>
   {getMessage(1)}
    <ul className="List-Group">
  /when rendering a list of items  using the map method we shoul dgive each item a unique key
   </ul>
 
- </div>
   <>
 }
  
@@ -186,13 +178,11 @@ function ListGroup {
 let items=["london","tokyo","paris","spain"];
 
 return ><>
-  <div>
    <ul className="List-Group">
    {items.length===0? && <p>no items found</p>}
   {items.map((item)=>(
     <li className="List-group-item" key={item} onClick={()=> console.log('clicked')}>{item}</li>))} //when rendering a list of items  using the map method we shoul dgive each item a unique key
   </ul>
-  </div>
 
   <>
 }
@@ -203,36 +193,31 @@ function ListGroup {
 let items=["london","tokyo","paris","spain"];
 
 return ><>
-  <div>
    <ul className="List-Group">
    {items.length===0? && <p>no items found</p>}
   {items.map((item)=>(
     <li className="List-group-item" key={item} onClick={()=> console.log(item)}>{item}</li>))}// in order to show th eitem clicked in the console we logged item to it 
 
    </ul>
-  </div>
   <>
 }-----------------
 return ><>
-  <div>
+  
    <ul className="List-Group">
    {items.length===0? && <p>no items found</p>}
   {items.map((item,index)=>(
     <li className="List-group-item" key={item} onClick={()=> console.log(item,index)}>{item}</li>))}// in order to show th eitem clicked in the console and number them in order 
 
    </ul>
-  </div>
   <>
 }
   return ><>
-  <div>
    <ul className="List-Group">
    {items.length===0? && <p>no items found</p>}
   {items.map((item,index)=>(
     <li className="List-group-item" key={item} onClick={(event)=> console.log(event)}>{item}</li>))}// by passing the event parameter you'll be abole to view the event details  
 
    </ul>
-  </div>
   <>
   
 
@@ -251,15 +236,57 @@ const [selctedIndex , setSelectedIndex]=useState(-1);
 const handleClick = (event : MouseEvent)=> console.log(event)
 
 return ><>
-  <div>
    <ul className="List-Group">
    {items.length===0? && <p>no items found</p>}
   {items.map((item,index)=>(
     <li className={selectedIndex===index ? "list-group-item active" : "list-group-item} key={item} onClick={()=>{setSelectedIndex(index);}}// in order to show th eitem clicked in the console we logged item to it 
 
    </ul>
+  <>
+import { useState } from "react"
+import { MouseEvent } from "react";
+
+
+interface Props {
+   items: string[];
+   heading: string;
+
+
+}
+
+function ListGroup ({items,heading}:Props{
+
+//Hook 
+const [selctedIndex , setSelectedIndex]=useState(-1);
+
+
+//event Handler
+const handleClick = (event : MouseEvent)=> console.log(event)
+
+return ><>
+
+    <h1>{heading}</h1>
+     {props.items.length===0? && <p>no items found</p>}
+    <ul className="List-Group">
+  {props.items.map((item,index)=>(
+    <li className={selectedIndex===index ? "list-group-item active" : "list-group-item} key={item} onClick={()=>{setSelectedIndex(index);}}// in order to show th eitem clicked in the console we logged item to it 
+
+   </ul>
   </div>
   <>
+
+  app.tsx
+  import ListGroup from "./components/listGroup"
+  function App(){
+let items=["london","tokyo","paris","spain"];
+return(
+<div>
+<ListGroup items={items} heading ="cities}
+</div>
+
+)
+  
+  }
 }
 `}</code></pre>
     <div className="section">
