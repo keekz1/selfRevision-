@@ -1,8 +1,9 @@
 // src/components/NoteEditor.js
 import React, { useState } from 'react';
 
-const NoteEditor = ({ addNote }) => {
-  const [content, setContent] = useState('');
+const NoteEditor = ({ addNote }) => {//This is the name of the component.
+  //This is destructuring the addNote prop, which is passed into the NoteEditor component. addNote is a function that the component can call to add a note.
+  const [content, setContent] = useState(''); // 
 
   // Handle content change in the textarea
   const handleChange = (event) => {
@@ -13,7 +14,7 @@ const NoteEditor = ({ addNote }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (content.trim()) {
-      addNote(content);
+      addNote(content); 
       setContent('');
     }
   };
