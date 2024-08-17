@@ -254,7 +254,7 @@ return ><>
   <div>
    <ul className="List-Group">
    {items.length===0? && <p>no items found</p>}
-  {items.map((item)=>(
+  {items.map((item,index)=>(
     <li className={selectedIndex===index ? "list-group-item active" : "list-group-item} key={item} onClick={()=>{setSelectedIndex(index);}}// in order to show th eitem clicked in the console we logged item to it 
 
    </ul>
